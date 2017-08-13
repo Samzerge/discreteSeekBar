@@ -17,10 +17,19 @@
 
 <resources>
     <!-- DiscreteSeekBar specific attributes -->
+
+    <attr name="dsb_thumbStyle">
+        <enum name="Default" value="0" />
+        <enum name="OnlyThumb" value="1" />
+        <enum name="OnlyMarker" value="2" />
+    </attr>
+
+
     <declare-styleable name="Theme">
       <attr name="discreteSeekBarStyle" format="reference"/>
     </declare-styleable>
     <declare-styleable name="DiscreteSeekBar">
+        <attr name="dsb_sections" format="integer"/>
         <attr name="dsb_min" format="integer|dimension"/>
         <attr name="dsb_max" format="integer|dimension"/>
         <attr name="dsb_value" format="integer|dimension"/>
@@ -28,6 +37,9 @@
         <attr name="dsb_allowTrackClickToDrag" format="boolean"/>
         <attr name="dsb_progressColor" format="color|reference"/>
         <attr name="dsb_trackColor" format="color|reference"/>
+        <attr name="dsb_trackDividerColor" format="color|reference"/>
+        <attr name="dsb_dividerHeight" format="integer"/>
+        <attr name="dsb_dividerWidth" format="integer"/>
         <attr name="dsb_indicatorTextAppearance" format="reference"/>
         <attr name="dsb_indicatorColor" format="color|reference"/>
         <attr name="dsb_indicatorElevation" format="dimension"/>
@@ -38,5 +50,7 @@
         <attr name="dsb_scrubberHeight" format="integer|dimension"/>
         <attr name="dsb_thumbSize" format="integer|dimension"/>
         <attr name="dsb_indicatorSeparation" format="integer|dimension"/>
+        <attr name="dsb_indicatorTextEnabled" format="boolean"/>
+        <attr name="dsb_thumbStyle" />
     </declare-styleable>
 </resources>
